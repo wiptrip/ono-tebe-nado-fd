@@ -105,34 +105,28 @@
   text-transform: uppercase;
 }
 
-.aligned-text_left {
+.aligned-text {
   display: block;
+}
+
+.aligned-text_left {
   text-align: start;
   line-height: 100px;
-  letter-spacing: 29px;
   padding-left: 0;
 }
 
 .aligned-text_center {
-  display: block;
   text-align: center;
   line-height: 160px;
-  letter-spacing: 30px;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: end;
   line-height: 110px;
-  letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 25px;
-}
-
-.no-letter-spacing {
-  margin-right: -25px;
+  letter-spacing: 30px; /* применяем только к нужным буквам */
 }
 
 .cover__description {
@@ -182,14 +176,14 @@
 .lots__card-list {
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 25px;
   margin: 0 0 30px 0;
   padding: 0;
 }
 
 .lots__card-list-item {
-  flex: 1 1 430px;
+  flex: 0 1 334px;
   min-height: 596px;
 }
 
